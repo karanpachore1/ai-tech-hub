@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tech Hub - Your Gateway to Artificial Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Tech Hub</span>
+            </div>
+            
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#tools" class="nav-link">AI Tools</a></li>
+                <li class="nav-item"><a href="#learning" class="nav-link">Learning</a></li>
+                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#" class="nav-link btn-login" id="loginBtn">Login</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle">
+                <input type="checkbox" id="themeToggle" class="theme-checkbox">
+                <label for="themeToggle" class="theme-label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to AI Tech Hub</h1>
+            <p class="hero-subtitle">Explore, Learn, and Master Artificial Intelligence Technologies</p>
+            <div class="hero-search">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Search AI tools...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button class="cta-button" id="ctaBtn">Get Started</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">AI Tools & Technologies</h2>
+            <p class="section-subtitle">Discover powerful AI tools and technologies</p>
+            
+            <!-- Tools Search/Filter -->
+            <div class="tools-filter">
+                <input type="text" id="toolsSearchInput" class="filter-input" placeholder="Search tools...">
+                <select id="toolsCategory" class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="nlp">NLP</option>
+                    <option value="ml">Machine Learning</option>
+                    <option value="dl">Deep Learning</option>
+                    <option value="cv">Computer Vision</option>
+                </select>
+            </div>
+            
+            <!-- Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tool cards will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning" class="learning-section">
+        <div class="container">
+            <h2 class="section-title">Learning Paths</h2>
+            <p class="section-subtitle">Master AI with structured learning categories</p>
+            
+            <div class="learning-grid">
+                <!-- DevOps Category -->
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>Learn infrastructure automation, containerization, and deployment strategies for AI applications.</p>
+                    <ul class="learning-topics">
+                        <li><i class="fas fa-check"></i> Docker & Kubernetes</li>
+                        <li><i class="fas fa-check"></i> CI/CD Pipelines</li>
+                        <li><i class="fas fa-check"></i> Cloud Deployment</li>
+                    </ul>
+                    <button class="learn-btn">Explore</button>
+                </div>
+                
+                <!-- Python Category -->
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Python for AI</h3>
+                    <p>Master Python programming essentials for AI and machine learning development.</p>
+                    <ul class="learning-topics">
+                        <li><i class="fas fa-check"></i> Python Basics</li>
+                        <li><i class="fas fa-check"></i> NumPy & Pandas</li>
+                        <li><i class="fas fa-check"></i> Frameworks</li>
+                    </ul>
+                    <button class="learn-btn">Explore</button>
+                </div>
+                
+                <!-- Data Science Category -->
+                <div class="learning-card">
+                    <div class="learning-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Learn data analysis, visualization, and statistical methods for AI-driven insights.</p>
+                    <ul class="learning-topics">
+                        <li><i class="fas fa-check"></i> Data Analysis</li>
+                        <li><i class="fas fa-check"></i> Visualization</li>
+                        <li><i class="fas fa-check"></i> Statistics</li>
+                    </ul>
+                    <button class="learn-btn">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <p class="section-subtitle">Stay updated with AI and tech trends</p>
+            
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog cards will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Tech Street, San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@aitechhub.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>AI Tech Hub</h4>
+                    <p>Empowering developers with AI technology and knowledge.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#learning">Learning</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tech Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Signup Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            
+            <!-- Login Form -->
+            <div class="auth-form" id="loginForm">
+                <h2>Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Login</button>
+                </form>
+                <p class="auth-toggle">Don't have an account? <a href="#" id="toSignup">Sign up here</a></p>
+            </div>
+            
+            <!-- Signup Form (Initially Hidden) -->
+            <div class="auth-form hidden" id="signupForm">
+                <h2>Create Account</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Sign Up</button>
+                </form>
+                <p class="auth-toggle">Already have an account? <a href="#" id="toLogin">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+</body>
+</html>
